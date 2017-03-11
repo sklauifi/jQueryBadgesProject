@@ -1,11 +1,11 @@
 $(function() {
-$.ajax({
-url:  'https://www.codeschool.com/users/sklauifi.json',
+$$.ajax({
+    url: 'https://www.codeschool.com/users/sklauifi.json',
     dataType: 'jsonp',
-    success: function(response){
-       addCourses(response.courses.completed);    
+    success: function(response) {
+      
     }
-})
+  });
 });
 
     function addCourses(courses){
