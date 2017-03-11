@@ -13,6 +13,7 @@ $$.ajax({
     var $badges = $('#badges');
         
     courses.forEach(fubction(course) {
+                    console.log(course);
                     
      var $course = $('div/>'), {
         'class': 'course'
@@ -24,7 +25,7 @@ $$.ajax({
         
         $('<img'/>', {
           src: course.badge
-          }).appendTo ($course);
+          }).appendTo($course);
         
         $('<a />', {
             'class': 'btn btn-primary',
