@@ -30,10 +30,10 @@ function addCourses(courses){
         
         $('<a />',{
           'class': 'btn btn-primary',
-            target: '_blank',
-            href: course.url,
-            text: 'See Course'
-            }).appendTo($course);
+          target: '_blank',
+          href: course.url,
+          text: 'See Course'
+          }).appendTo($course);
      })               
  }    
         
