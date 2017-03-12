@@ -1,8 +1,6 @@
 $(function () {
     
-  
-    
-    $.ajax({
+  $.ajax({
     url: 'https://www.codeschool.com/users/sklauifi.json',
     dataType: 'jsonp',
     success: function(response) {
