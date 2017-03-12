@@ -1,33 +1,34 @@
 $(function() {
-$$.ajax({
+    
+$.ajax({
     url: 'https://www.codeschool.com/users/sklauifi.json',
     dataType: 'jsonp',
     success: function(response) {
-      
+    addCourses(response.courses.completed); 
     }
   });
-});
 
     function addCourses(courses){
      
     var $badges = $('#badges');
         
-    courses.forEach(fubction(course) {
-                    console.log(course);
+    courses.forEach(function(course) {
+        
+    console.log(course);
                     
-     var $course = $('div/>'), {
+     var $course = $('div/>'),{
         'class': 'course'
     }).appendTo($badges);
         
-    $('<h3/>', {
+    $('<h3 />', {
         text: course.title
     }).appendTo($course); 
         
-        $('<img'/>', {
+        $('<img />',{
           src: course.badge
           }).appendTo($course);
         
-        $('<a />', {
+        $('<a />',{
             'class': 'btn btn-primary',
             target: '_blank',
             href: course.url,
@@ -36,12 +37,8 @@ $$.ajax({
         
         
     })               
-                    
-                    
-                    
-                    
-                    }    
+ }    
         
+  });       
         
-        
-    });
+   
