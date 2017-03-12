@@ -16,7 +16,7 @@ function addCourses(courses){
         
         console.log(course);
                     
-        var $course = $('div/>'),{
+        var $course = $('div />',{
             'class': 'course'
         }).appendTo($badges);
         
