@@ -1,10 +1,12 @@
-$(function() {
+$(function () {
     
-$.ajax({
-  url: 'https://www.codeschool.com/users/sklauifi.json',
-  dataType: 'jsonp',
-  success: function(response) {
-  addCourses(response.courses.completed); 
+  
+    
+    $.ajax({
+    url: 'https://www.codeschool.com/users/sklauifi.json',
+    dataType: 'jsonp',
+    success: function(response) {
+    addCourses(response.courses.completed); 
     }
   });
 
@@ -37,5 +39,5 @@ function addCourses(courses){
      })               
  }    
         
-  });       
+ });       
         
